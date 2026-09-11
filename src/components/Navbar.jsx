@@ -16,9 +16,9 @@ import { useTheme } from '../context/ThemeContext';
 
 const navLinks = [
   { name: 'Home', href: '#home', icon: FiHome },
-  { name: 'About', href: '#about', icon: FiUser },
-  { name: 'Projects', href: '#projects', icon: FiBriefcase },
+  // { name: 'About', href: '#about', icon: FiUser },
   { name: 'Skills', href: '#skills', icon: FiCode },
+  { name: 'Projects', href: '#projects', icon: FiBriefcase },
   { name: 'Contact', href: '#contact', icon: FiMail },
 ];
 

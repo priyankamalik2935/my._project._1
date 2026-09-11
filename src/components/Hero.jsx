@@ -16,7 +16,7 @@ import { HiOutlineSparkles } from 'react-icons/hi2';
 import { FaRocket } from 'react-icons/fa';
 
 const socialLinks = [
-  { icon: FiGithub, href: 'https://github.com', label: 'GitHub' },
+  { icon: FiGithub, href: 'https://github.com/priyankamalik2935', label: 'GitHub' },
   { icon: FiLinkedin, href: 'https://linkedin.com', label: 'LinkedIn' },
   { icon: FiTwitter, href: 'https://twitter.com', label: 'Twitter' },
   { icon: FiMail, href: 'mailto:hello@example.com', label: 'Email' },

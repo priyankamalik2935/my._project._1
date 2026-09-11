@@ -1,55 +1,32 @@
 import React from 'react';
-import { ThemeProvider } from './context/ThemeContext';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+import { ThemeProvider } from './context/ThemeContext.jsx';
+import SmoothScroll from './components/SmoothScroll';
+import Navbar from './components/Navbar.jsx';
+import Hero from './components/Hero.jsx';
+import Skill from'./components/Skill.jsx';
+import Project from './components/Project.jsx';
+import Experience from './components/Exp.jsx';
+import Contact from './components/ContactUs.jsx';
+import Footer from './components/Footer.jsx';
+
+
 
 export default function App() {
   return (
     <ThemeProvider>
+       <SmoothScroll offset={80} duration={700}>
       <div className="min-h-screen bg-white dark:bg-dark-950 transition-colors duration-300">
         <Navbar />
         <Hero />
+        <Skill/>
+        <Project/>
+        <Experience/>
+        <Contact/>
+        <Footer/>
 
-        {/* ABOUT */}
-        <section
-          id="about"
-          className="min-h-screen flex items-center justify-center px-4 bg-dark-50 dark:bg-dark-900/40"
-        >
-          <h2 className="text-4xl md:text-6xl font-bold text-dark-950 dark:text-white">
-            About Section
-          </h2>
-        </section>
-
-        {/* PROJECTS */}
-        <section
-          id="projects"
-          className="min-h-screen flex items-center justify-center px-4"
-        >
-          <h2 className="text-4xl md:text-6xl font-bold text-dark-950 dark:text-white">
-            Projects Section
-          </h2>
-        </section>
-
-        {/* SKILLS */}
-        <section
-          id="skills"
-          className="min-h-screen flex items-center justify-center px-4 bg-dark-50 dark:bg-dark-900/40"
-        >
-          <h2 className="text-4xl md:text-6xl font-bold text-dark-950 dark:text-white">
-            Skills Section
-          </h2>
-        </section>
-
-        {/* CONTACT */}
-        <section
-          id="contact"
-          className="min-h-screen flex items-center justify-center px-4"
-        >
-          <h2 className="text-4xl md:text-6xl font-bold text-dark-950 dark:text-white">
-            Contact Section
-          </h2>
-        </section>
+        
       </div>
+      </SmoothScroll>
     </ThemeProvider>
   );
 }
